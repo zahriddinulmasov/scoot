@@ -1,0 +1,122 @@
+.footer {
+
+    &__container {
+        padding: 21px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #333A44;
+    }
+
+    &__logo {
+        padding: 15px 0;
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+
+    &__nav {
+        max-width: 950px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    &__nav-list {
+        margin: 0;
+        margin-right: 30px;
+        padding: 0;
+        max-width: 249px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+
+    &__nav-link:hover {
+        opacity: 0.8;
+    }
+
+    &__nav-link:active {
+        color: #FCB72B;
+    }
+
+    &__applications-link {
+        text-decoration: none;
+    }
+
+    &__applications-link + &__applications-link {
+        margin-left: 24px;
+    }
+
+    &__applications-link-logo:active path {
+        fill: #E5ECF4;;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+
+        &__container {
+            padding-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__logo {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &__nav-list {
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    .footer {
+
+        &__nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__nav-list {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .footer {
+        min-height: 438px;
+
+        &__container {
+            padding: 64px 20px 88px;
+        }
+
+        &__nav-list {
+            margin-bottom: 85px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__nav-item + &__nav-item {
+            margin-top: 16px;
+        }
+
+        &__heading {
+            margin-bottom: 41px;
+        }
+    }
+}
