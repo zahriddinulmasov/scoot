@@ -1,0 +1,23 @@
+.button {
+    padding: 14px 33px;
+    max-width: 180px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FCB72B;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    color: #FCB72B;
+    background: transparent;
+    border: 3px solid #FCB72B;
+    box-sizing: border-box;
+}

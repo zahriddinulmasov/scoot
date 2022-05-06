@@ -1,0 +1,126 @@
+.header {
+
+    &__container {
+        padding: 21px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFFFFF;
+    }
+
+    &__logo {
+        padding: 15px 0;
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+
+    &__nav {
+        max-width: 950px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    &__nav-list {
+        margin: 0;
+        margin-right: 30px;
+        padding: 0;
+        max-width: 249px;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+
+    &__nav-link:hover {
+        opacity: 0.8;
+    }
+
+    &__nav-link:active {
+        color: #FCB72B;
+    }
+
+    &__hamburger {
+        width: 20px;
+        height: 16px;
+        border: none;
+        background-color: transparent;
+        display: none;
+        background-image: url("../images/hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all 0.4s;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        position: relative;
+
+        &__container {
+            padding: 10px 20px;
+        }
+
+        &__logo {
+            order: 2;
+            margin: 0 auto
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__hamburger {
+            display: inline-block;
+            order: 1;
+        }
+    }
+
+    .header--open .header__nav {
+        padding: 64px 0 24px 32px;
+        width: unset;
+        width: 68%;
+        min-height: 650px;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        background: #333A44;
+    }
+
+    .header--open .header__nav-list {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header--open .header__nav-item{
+        margin-bottom: 24px;
+    }
+
+    .header--open .header__nav-link {
+        font-size: 18px;
+        color: #E5ECF4;
+    }
+
+    .header--open .header__buttom {
+        margin-bottom: 24px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .header--open .header__hamburger {
+        background-image: url("../images/back.svg");
+        transition: all 0.4s;
+    }
+}
