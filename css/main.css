@@ -636,7 +636,7 @@ img {
     min-height: 700px;
     background-image: url("../images/hero_fon-tablet.png");
     background-repeat: no-repeat;
-    background-size: 768px 700px;
+    background-size: 768px 650px;
     position: relative;
   }
   .hero__bottom {
@@ -666,12 +666,12 @@ img {
     margin-top: 0;
     margin-left: -130px;
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    bottom: 60px;
+    left: -25px;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 388px) {
   .hero__container {
     padding: 0 10px;
     padding-top: 115px;
@@ -829,6 +829,168 @@ img {
   }
   .conveniences__img-mobile {
     max-width: 375px;
+  }
+}
+
+.capabilities__container {
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.capabilities__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/main-middle_fon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -30px top 0;
+}
+
+.capabilities__wrapper + .capabilities__wrapper {
+  margin-top: 155px;
+}
+
+.capabilities__wrapper:nth-child(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background-image: url("../images/main-middle_fon-odd.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left -50px top 0;
+}
+
+.capabilities__content {
+  max-width: 420px;
+}
+
+.capabilities__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.capabilities__desc {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.capabilities__picture {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.capabilities__img {
+  margin-right: -50px;
+}
+
+.capabilities__img-city {
+  margin-left: -90px;
+}
+
+.capabilities__img-mony {
+  margin-right: -100px;
+}
+
+@media only screen and (max-width: 900px) {
+  .capabilities__container {
+    padding-bottom: 104px;
+  }
+  .capabilities__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .capabilities__wrapper:nth-child(odd) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .capabilities__wrapper + .capabilities__wrapper {
+    margin-top: 128px;
+  }
+  .capabilities__content {
+    max-width: 573px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .capabilities__heading {
+    max-width: 457px;
+    text-align: center;
+  }
+  .capabilities__desc {
+    text-align: center;
+  }
+  .capabilities__img {
+    margin-bottom: 56px;
+  }
+  .capabilities__img-city {
+    margin-bottom: 56px;
+  }
+  .capabilities__img-mony {
+    margin-bottom: 56px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .capabilities__img-city {
+    margin: 0 auto 56px;
+    margin-left: -50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .capabilities__wrapper {
+    background-image: none;
+  }
+  .capabilities__wrapper:nth-child(odd) {
+    background-image: none;
+  }
+  .capabilities__wrapper + .capabilities__wrapper {
+    margin-top: 120px;
+  }
+  .capabilities__heading {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .capabilities__img-city {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
