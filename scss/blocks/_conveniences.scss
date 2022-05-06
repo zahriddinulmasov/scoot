@@ -1,0 +1,143 @@
+.conveniences {
+
+    &__container {
+        padding-top: 160px;
+        padding-bottom: 200px;
+        background-image: url("../images/services_line.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left -245px top 200px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 320px;
+    }
+
+    &__item + &__item {
+        margin-left: 20px;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 27px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+
+    &__desc {
+        margin: 0;
+        font-family: 'Lexend Deca', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .conveniences {
+
+        &__container {
+            padding-top: 122px;
+            padding-bottom: 145px;
+            background-image: url("../images/services_line-tablet.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left 57px top -200px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            max-width: 573px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 40px;
+        }
+
+        &__img {
+            margin-right: 20px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        &__internal {
+            max-width: 398px;
+        }
+
+        &__title {
+            margin-bottom: 27px;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .conveniences {
+
+        &__container {
+            background-image: none;
+        }
+
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item + &__item {
+            margin-bottom: 18px;
+        }
+
+        &__internal {
+            max-width: 475px;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        &__desc {
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .conveniences {
+
+        &__container {
+            padding-top: 120px;
+            padding-bottom: 83px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__img-mobile {
+            max-width: 375px;
+        }
+    }
+}

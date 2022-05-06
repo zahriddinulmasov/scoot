@@ -1,0 +1,131 @@
+.hero {
+
+    &__container {
+        padding: 153px 20px 20px;
+        min-height: 650px;
+        background-image: url("../images/hero_fon.png");
+        background-repeat: no-repeat;
+        background-size: 1146px 650px;
+        overflow: hidden;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 40px;
+        max-width: 500px;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+
+    &__bottom {
+        padding-left: -165px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__bottom-left-img {
+        margin-left: -165px;
+        margin-bottom: 90px;
+    }
+
+    &__bottom-right-img {
+        margin-top: 36px;
+    }
+
+    &__bottom-middle {
+        margin: 0 20px;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 40px;
+        max-width: 350px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+
+        &__container {
+            margin: 0 auto;
+            padding-top: 137px;
+            min-height: 700px;
+            background-image: url("../images/hero_fon-tablet.png");
+            background-repeat: no-repeat;
+            background-size: 768px 700px;
+            position: relative;
+        }
+
+        &__bottom {
+            max-width: 728px;
+        }
+
+        &__bottom-middle {
+            margin: 0;
+            max-width: 728px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__heading {
+            margin-bottom: 32px;
+            max-width: 728px;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__desc {
+            margin-bottom: 24px;
+            max-width: 728px;
+            text-align: center;
+        }
+
+        &__bottom-left-img {
+            display: none;
+        }
+
+        &__bottom-right-img {
+            margin-top: 0;
+            margin-left: -130px;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero {
+
+        &__container {
+            padding: 0 10px;
+            padding-top: 115px;
+            padding-bottom: 34px;
+            min-height: 650px;
+            background-image: url("../images/hero-fon-mobile.png");
+            background-repeat: no-repeat;
+            background-size: 375px 650px;
+        }
+
+        &__heading {
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__desc {
+            margin-bottom: 34px;
+        }
+
+        &__bottom-right-img {
+            bottom: 35px;
+            left: -100px;
+        }
+    }
+}

@@ -341,6 +341,20 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v11-latin-ext-700.woff2") format("woff2"), url("../fonts/space-mono-v11-latin-ext-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v16-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v16-latin-regular.woff") format("woff");
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -364,8 +378,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -388,7 +403,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1146px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -557,6 +572,263 @@ img {
     background-image: url("../images/back.svg");
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
+  }
+}
+
+.hero__container {
+  padding: 153px 20px 20px;
+  min-height: 650px;
+  background-image: url("../images/hero_fon.png");
+  background-repeat: no-repeat;
+  background-size: 1146px 650px;
+  overflow: hidden;
+}
+
+.hero__heading {
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 500px;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+.hero__bottom {
+  padding-left: -165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__bottom-left-img {
+  margin-left: -165px;
+  margin-bottom: 90px;
+}
+
+.hero__bottom-right-img {
+  margin-top: 36px;
+}
+
+.hero__bottom-middle {
+  margin: 0 20px;
+}
+
+.hero__desc {
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 350px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__container {
+    margin: 0 auto;
+    padding-top: 137px;
+    min-height: 700px;
+    background-image: url("../images/hero_fon-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 768px 700px;
+    position: relative;
+  }
+  .hero__bottom {
+    max-width: 728px;
+  }
+  .hero__bottom-middle {
+    margin: 0;
+    max-width: 728px;
+    width: 100%;
+    text-align: center;
+  }
+  .hero__heading {
+    margin-bottom: 32px;
+    max-width: 728px;
+    width: 100%;
+    text-align: center;
+  }
+  .hero__desc {
+    margin-bottom: 24px;
+    max-width: 728px;
+    text-align: center;
+  }
+  .hero__bottom-left-img {
+    display: none;
+  }
+  .hero__bottom-right-img {
+    margin-top: 0;
+    margin-left: -130px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero__container {
+    padding: 0 10px;
+    padding-top: 115px;
+    padding-bottom: 34px;
+    min-height: 650px;
+    background-image: url("../images/hero-fon-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 375px 650px;
+  }
+  .hero__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .hero__desc {
+    margin-bottom: 34px;
+  }
+  .hero__bottom-right-img {
+    bottom: 35px;
+    left: -100px;
+  }
+}
+
+.conveniences__container {
+  padding-top: 160px;
+  padding-bottom: 200px;
+  background-image: url("../images/services_line.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left -245px top 200px;
+}
+
+.conveniences__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conveniences__item {
+  max-width: 320px;
+}
+
+.conveniences__item + .conveniences__item {
+  margin-left: 20px;
+}
+
+.conveniences__img {
+  margin-bottom: 40px;
+}
+
+.conveniences__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.conveniences__desc {
+  margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media only screen and (max-width: 768px) {
+  .conveniences__container {
+    padding-top: 122px;
+    padding-bottom: 145px;
+    background-image: url("../images/services_line-tablet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 57px top -200px;
+  }
+  .conveniences__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .conveniences__item {
+    max-width: 573px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .conveniences__item + .conveniences__item {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .conveniences__img {
+    margin-right: 20px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .conveniences__internal {
+    max-width: 398px;
+  }
+  .conveniences__title {
+    margin-bottom: 27px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .conveniences__container {
+    background-image: none;
+  }
+  .conveniences__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .conveniences__item + .conveniences__item {
+    margin-bottom: 18px;
+  }
+  .conveniences__internal {
+    max-width: 475px;
+  }
+  .conveniences__title {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .conveniences__desc {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .conveniences__container {
+    padding-top: 120px;
+    padding-bottom: 83px;
+  }
+  .conveniences__title {
+    font-size: 20px;
+  }
+  .conveniences__img-mobile {
+    max-width: 375px;
   }
 }
 /*# sourceMappingURL=main.css.map */

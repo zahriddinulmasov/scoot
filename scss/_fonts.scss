@@ -1,1 +1,17 @@
-//Shu yerdan ofntlar turadi
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src:
+    url('../fonts/space-mono-v11-latin-ext-700.woff2') format('woff2'),
+    url('../fonts/space-mono-v11-latin-ext-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lexend Deca', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src:
+    url('../fonts/lexend-deca-v16-latin-regular.woff2') format('woff2'),
+    url('../fonts/lexend-deca-v16-latin-regular.woff') format('woff');
+}
